@@ -1,0 +1,32 @@
+.promo {
+  background-color: rgba($basic-green, 85%);
+
+  &__title {
+    @include oswald-normal();
+    color: $basic-white;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  &__subtitle {
+    color: $basic-white;
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+  }
+
+  &__link {
+    @include oswald-normal;
+    color: $basic-white;
+    background-color: $basic-green;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 280px;
+    height: 40px;
+  }
+}

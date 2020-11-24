@@ -1,0 +1,42 @@
+.live-example {
+  background-color: $darken-grey;
+
+  &__title {
+    @include oswald-normal;
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  &__text {
+    @include arial-normal;
+    color: $special_dark-grey;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &__result {
+    @include oswald-normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+}
+
+.stats {
+  background-color: $darken-grey;
+
+  &__weight,
+  &__time {
+    @include oswald-normal;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  &__weight-description,
+  &__time-description {
+    @include arial-normal;
+    color: $special_dark-grey;
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
