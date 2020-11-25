@@ -1,42 +1,43 @@
 .live-example {
   background-color: $darken-grey;
-
-  &__title {
-    @include oswald-normal;
-    font-size: 36px;
-    line-height: 40px;
-  }
-
-  &__text {
-    @include arial-normal;
-    color: $special_dark-grey;
-    font-size: 14px;
-    line-height: 18px;
-  }
-
-  &__result {
-    @include oswald-normal;
-    font-size: 14px;
-    line-height: 20px;
-    text-transform: uppercase;
-  }
 }
 
+.live-example__title {
+  @include oswald-normal;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.live-example__text {
+  @include arial-normal;
+  color: $special_dark-grey;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.live-example__result {
+  @include oswald-normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+// Stats
 .stats {
   background-color: $darken-grey;
+}
 
-  &__weight,
-  &__time {
-    @include oswald-normal;
-    font-size: 24px;
-    line-height: 24px;
-  }
+.stats__weight,
+.stats__time {
+  @include oswald-normal;
+  font-size: 24px;
+  line-height: 24px;
+}
 
-  &__weight-description,
-  &__time-description {
-    @include arial-normal;
-    color: $special_dark-grey;
-    font-size: 12px;
-    line-height: 12px;
-  }
+.stats__weight-description,
+.stats__time-description {
+  @include arial-normal;
+  color: $special_dark-grey;
+  font-size: 12px;
+  line-height: 12px;
 }

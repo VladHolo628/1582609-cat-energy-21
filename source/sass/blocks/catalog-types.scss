@@ -1,25 +1,24 @@
 .catalog-type {
   background-color: $basic-grey;
+}
 
-  &__title {
-    @include oswald-normal;
-    font-size: 24px;
-    line-height: 37px;
-  }
+.catalog-type__title {
+  @include oswald-normal;
+  font-size: 24px;
+  line-height: 37px;
+}
 
-  &__description {
-    color: $special-dark-grey;
+.catalog-type__description {
+  @include arial-normal;
+  color: $special-dark-grey;
+  font-size: 14px;
+  line-height: 18px;
+}
 
-    @include arial-normal;
-    font-size: 14px;
-    line-height: 18px;
-  }
-
-  &__link {
-    @include link-reset();
-    @include oswald-normal;
-    font-size: 16px;
-    line-height: 16px;
-    text-transform: uppercase;
-  }
+.catalog-type__link {
+  @include link-reset();
+  @include oswald-normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
 }

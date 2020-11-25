@@ -1,22 +1,20 @@
-.features {
-  &__title {
-    @include oswald-normal;
-    font-size: 36px;
-    line-height: 40px;
-  }
+.features__title {
+  @include oswald-normal;
+  font-size: 36px;
+  line-height: 40px;
+}
 
-  &__list {
-    list-style: none;
+.features__list {
+  list-style: none;
 
-    :not(:last-child) {
-      margin-bottom: 24px;
-    }
+  :not(:last-child) {
+    margin-bottom: 24px;
   }
+}
 
-  &__item {
-    @include arial-normal;
-    color: $special_dark-grey;
-    font-size: 14px;
-    line-height: 18px;
-  }
+.features__item {
+  @include arial-normal;
+  color: $special_dark-grey;
+  font-size: 14px;
+  line-height: 18px;
 }

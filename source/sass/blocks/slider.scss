@@ -1,17 +1,15 @@
-.slider {
-  &__toggle {
-    @include oswald-normal;
-    font-size: 16px;
-    line-height: 20px;
-    border: none;
-    cursor: pointer;
-  }
+.slider__toggle {
+  @include oswald-normal;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+  cursor: pointer;
+}
 
-  &__slide {
-    display: none;
+.slider__slide {
+  display: none;
 
-    &--active {
-      display: block;
-    }
+  &--active {
+    display: block;
   }
 }
