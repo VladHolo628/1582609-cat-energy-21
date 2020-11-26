@@ -1,0 +1,16 @@
+@mixin link-reset() {
+  color: $basic-black;
+  text-decoration: none;
+}
+
+@mixin oswald-normal() {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin arial-normal {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
