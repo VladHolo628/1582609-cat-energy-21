@@ -1,0 +1,16 @@
+.button {
+  @include oswald-normal;
+  width: 280px;
+  height: 40px;
+  background-color: $basic-green;
+  color: $basic-white;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border: none;
+}
+
+.more-products__button {
+  background-color: $basic-grey;
+  color: $special-dark-grey;
+}
