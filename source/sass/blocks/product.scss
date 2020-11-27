@@ -1,0 +1,73 @@
+.products-block__list {
+  margin: 0;
+  padding: 0;
+}
+
+.product {
+  list-style: none;
+}
+
+.product__name {
+  @include oswald-normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: $special_dark-grey-2;
+}
+
+// Product statistics
+.product-stats__title {
+  @include arial-normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special_dark-grey;
+}
+
+.product-stats__description {
+  @include arial-normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special_dark-grey;
+}
+
+// More products
+.more-products {
+  list-style: none;
+}
+
+.more-products__title {
+  @include oswald-normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: $lighten-black;
+  text-transform: uppercase;
+}
+
+.more-products__subtitle {
+  @include arial-normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special_dark-grey;
+}
+
+// Additional products
+.additional-products__title {
+  @include oswald-normal;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.additional-product__name {
+  @include oswald-normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $special_dark-grey-2;
+}
+
+.additional-product__quantity,
+.additional-product__cost {
+  @include arial-normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: $special_dark-grey;
+}

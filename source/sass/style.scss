@@ -2,6 +2,7 @@
 @import "global/fonts.scss";
 @import "colors.scss";
 @import "mixins.scss";
+@import "visually-hidden.scss";
 @import "blocks/page-header.scss";
 @import "blocks/catalog-types.scss";
 @import "blocks/main-nav.scss";
@@ -16,3 +17,5 @@
 @import "blocks/form.scss";
 @import "blocks/page-main.scss";
 @import "blocks/button.scss";
+@import "blocks/gift.scss";
+@import "blocks/product.scss";
