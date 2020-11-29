@@ -1,0 +1,14 @@
+// Product statistics
+.product-stats__title {
+  @include arial-normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special_dark-grey;
+}
+
+.product-stats__description {
+  @include arial-normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special_dark-grey;
+}

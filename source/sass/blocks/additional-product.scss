@@ -1,0 +1,15 @@
+.additional-product__name {
+  @include oswald-normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $special_dark-grey-2;
+}
+
+.additional-product__quantity,
+.additional-product__cost {
+  @include arial-normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: $special_dark-grey;
+}

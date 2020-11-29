@@ -1,0 +1,18 @@
+.stats {
+  background-color: $darken-grey;
+}
+
+.stats__weight,
+.stats__time {
+  @include oswald-normal;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.stats__weight-description,
+.stats__time-description {
+  @include arial-normal;
+  color: $special_dark-grey;
+  font-size: 12px;
+  line-height: 12px;
+}

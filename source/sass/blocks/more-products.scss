@@ -1,0 +1,24 @@
+// More products
+.more-products {
+  list-style: none;
+}
+
+.more-products__title {
+  @include oswald-normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: $lighten-black;
+  text-transform: uppercase;
+}
+
+.more-products__subtitle {
+  @include arial-normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special_dark-grey;
+}
+
+.more-products__button {
+  background-color: $basic-grey;
+  color: $special-dark-grey;
+}
