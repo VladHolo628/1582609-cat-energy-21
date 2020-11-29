@@ -1,0 +1,10 @@
+.product {
+  list-style: none;
+}
+
+.product__name {
+  @include oswald-normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: $special_dark-grey-2;
+}

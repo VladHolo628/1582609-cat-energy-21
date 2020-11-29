@@ -1,0 +1,12 @@
+.form__block-title {
+  @include oswald-normal;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+// Form submit
+.form__submit-legend {
+  @include arial-normal;
+  font-size: 14px;
+  line-height: 16px;
+}
