@@ -1,0 +1,18 @@
+.catalog-types__wrapper {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: none;
+    column-gap: 80px;
+  }
+}

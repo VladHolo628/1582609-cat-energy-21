@@ -1,5 +1,9 @@
 .stats {
   background-color: $darken-grey;
+
+  @media (min-width: $tablet-width) {
+    max-width: 366px;
+  }
 }
 
 .stats__weight,
@@ -15,4 +19,10 @@
   color: $special_dark-grey;
   font-size: 12px;
   line-height: 12px;
+  margin: 0 auto;
+
+
+  @media (max-width: $mobile-width-only) {
+    width: 87px;
+  }
 }

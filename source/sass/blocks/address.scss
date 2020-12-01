@@ -1,11 +1,18 @@
 .address {
   margin: 0 auto;
+  position: relative;
 }
 
 .address__title {
   @include oswald-normal;
   font-size: 16px;
   line-height: 18px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
 .address__text {
@@ -13,4 +20,26 @@
   color: $special-dark-grey;
   font-size: 14px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.address__wrapper {
+  @media (min-width: $desktop-width) {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    background-color: $basic-white;
+    width: 570px;
+    height: 201px;
+    padding-left: 76px;
+    padding-right: 89px;
+  }
 }
