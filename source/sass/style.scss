@@ -1,10 +1,12 @@
 @import "normalize.scss";
+@import "viewports.scss";
 @import "global/fonts.scss";
 @import "colors.scss";
 @import "mixins.scss";
 @import "visually-hidden.scss";
 @import "blocks/page-header.scss";
 @import "blocks/catalog-type.scss";
+@import "blocks/catalog-types.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/promo.scss";
 @import "blocks/features.scss";
@@ -28,3 +30,5 @@
 @import "blocks/form/field-checkbox.scss";
 @import "blocks/form/field-radio.scss";
 @import "blocks/form/field-text.scss";
+@import "blocks/credits.scss";
+@import "blocks/map.scss";

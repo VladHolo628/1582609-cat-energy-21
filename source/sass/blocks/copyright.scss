@@ -3,4 +3,10 @@
   color: $special-dark-grey;
   font-size: 16px;
   line-height: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.copyright__text {
+  margin-right: 22px;
 }
