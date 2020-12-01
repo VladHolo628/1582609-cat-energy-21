@@ -1,7 +1,7 @@
 .button {
   @include oswald-normal;
-  width: 280px;
-  height: 40px;
+  min-width: 280px;
+  min-height: 40px;
   background-color: $basic-green;
   color: $basic-white;
   font-size: 16px;
