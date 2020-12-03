@@ -1,5 +1,28 @@
 .product {
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto;
+    background-color: $basic-grey;
+    padding: 0 37px 40px 37px;
+  }
+}
+
+.product__img-block {
+  @media (min-width: $tablet-width) {
+    grid-row: 1/2;
+    margin: 0 auto;
+  }
+}
+
+.product__info-block {
+  @media (min-width: $tablet-width) {
+    grid-row: 2/3;
+  }
 }
 
 .product__name {
@@ -7,4 +30,12 @@
   font-size: 16px;
   line-height: 20px;
   color: $special_dark-grey-2;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
+}
+
+.product__button {
+  grid-column: 1/3;
 }

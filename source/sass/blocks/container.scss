@@ -1,12 +1,12 @@
 .container {
-  max-width: 280px;
+  width: 87.5%;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    max-width: 709px;
+    width: 92.32%;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1220px;
+    max-width: 84.72%;
   }
 }
