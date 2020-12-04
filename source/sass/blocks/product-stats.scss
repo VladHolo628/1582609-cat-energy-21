@@ -1,4 +1,11 @@
 // Product statistics
+
+.product-stats__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: auto;
+}
+
 .product-stats__title {
   @include arial-normal;
   font-size: 12px;
@@ -11,4 +18,6 @@
   font-size: 12px;
   line-height: 16px;
   color: $special_dark-grey;
+  margin: 0;
+  text-align: right;
 }
