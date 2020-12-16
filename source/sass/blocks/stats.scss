@@ -1,8 +1,29 @@
 .stats {
-  background-color: $darken-grey;
-
   @media (min-width: $tablet-width) {
     max-width: 366px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-grey;
+  }
+}
+
+.stats__weight-loss {
+  @media (min-width: $tablet-width) {
+    margin-left: 34px;
+    padding-top: 27px;
+  }
+}
+
+.stats__time-spent {
+  @media (min-width: $tablet-width) {
+    margin-right: 17px;
+    padding-top: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 12px;
+    padding-top: 27px;
   }
 }
 
@@ -11,6 +32,16 @@
   @include oswald-normal;
   font-size: 24px;
   line-height: 24px;
+  margin-bottom: 9px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 13px;
+  }
 }
 
 .stats__weight-description,
@@ -21,8 +52,12 @@
   line-height: 12px;
   margin: 0 auto;
 
-
   @media (max-width: $mobile-width-only) {
-    width: 87px;
+    width: 80px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
   }
 }

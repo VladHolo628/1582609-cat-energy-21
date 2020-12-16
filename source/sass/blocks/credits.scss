@@ -1,14 +1,21 @@
 .credits {
+  border-bottom: 1px solid $border-grey-2;
+  text-align: center;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    padding: 0 30px;
     align-items: center;
+    border-bottom: none;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 110px;
+.credits__logo-link {
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+
+  @media (max-width: $mobile-width-only) {
+    padding-bottom: 28px;
   }
 }

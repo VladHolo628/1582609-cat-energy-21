@@ -1,6 +1,13 @@
+.catalog-types {
+  margin-bottom: 27px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 75px;
+  }
+}
+
 .catalog-types__wrapper {
   display: grid;
-  grid-template-rows: 1fr 1fr;
   row-gap: 20px;
 
   @media (min-width: $tablet-width) {
@@ -14,5 +21,8 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: none;
     column-gap: 80px;
+    right: 16px;
+    position: relative;
+    margin-left: 20px;
   }
 }

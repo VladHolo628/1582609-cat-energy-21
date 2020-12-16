@@ -2,5 +2,40 @@
   list-style: none;
   padding: 0;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+
+  @media (max-width: $mobile-width-only) {
+    margin: 0 auto;
+    padding: 20px 77px 15px 73px;
+    border-bottom: 1px solid $border-grey-2;
+  }
+
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    min-width: 129px;
+    margin-left: 27px;
+    margin-top: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 44px;
+  }
+}
+
+.socials__item-img {
+  &--vk {
+    width: 30px;
+    height: 22px;
+  }
+
+  &--instagram {
+    width: 23px;
+    height: 23px;
+  }
+
+  &--facebook {
+    width: 28px;
+    height: 33px;
+  }
 }

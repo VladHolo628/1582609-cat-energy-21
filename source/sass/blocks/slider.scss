@@ -2,12 +2,55 @@
   @include oswald-normal;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
   border: none;
   cursor: pointer;
+
+  &--before {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 84px;
+      height: 14px;
+      bottom: 5px;
+      left: 65px;
+      background-image: url "(../../img/slider-toggle-mobile.svg)";
+
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.slider__toggle-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $mobile-width-only) {
+    width: 228px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .slider__slide {
   display: none;
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 
   &--active {
     display: block;
@@ -16,4 +59,42 @@
 
 .slider {
   text-align: center;
+  padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
+}
+
+.slider__img {
+  &--mobile {
+    display: none;
+
+    @media (max-width: $mobile-width-only) {
+      display: block;
+    }
+  }
+
+  &--tablet {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+      position: relative;
+      left: -32px;
+      top: 9px;
+    }
+  }
 }
