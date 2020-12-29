@@ -17,7 +17,7 @@
       height: 14px;
       bottom: 5px;
       left: 65px;
-      background-image: url "(../../img/slider-toggle-mobile.svg)";
+      background-image: url("../../img/slider-toggle-mobile.svg");
 
       @media (min-width: $tablet-width) {
         display: none;
@@ -54,6 +54,27 @@
 
   &--active {
     display: block;
+
+    @media (max-width: $mobile-width-only) {
+      background-image: url("../../img/before-mobile-slider.png");
+      width: 311px;
+      height: 232px;
+    }
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/image-slider-tablet.png");
+      width: 708px;
+      height: 620px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../../img/image-slider-desktop.png");
+      width: 690px;
+      height: 656px;
+      position: relative;
+      left: -32px;
+      top: 9px;
+    }
   }
 }
 
@@ -63,38 +84,5 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
-  }
-}
-
-.slider__img {
-  &--mobile {
-    display: none;
-
-    @media (max-width: $mobile-width-only) {
-      display: block;
-    }
-  }
-
-  &--tablet {
-    display: none;
-
-    @media (min-width: $tablet-width) {
-      display: block;
-    }
-
-    @media (min-width: $desktop-width) {
-      display: none;
-    }
-  }
-
-  &--desktop {
-    display: none;
-
-    @media (min-width: $desktop-width) {
-      display: block;
-      position: relative;
-      left: -32px;
-      top: 9px;
-    }
   }
 }
