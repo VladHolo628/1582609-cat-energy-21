@@ -8,10 +8,20 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 21px;
+    line-height: 23px;
+    display: inline-block;
+    padding-top: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 23px;
+    display: inline-block;
+    padding-top: 0;
   }
 }
 
@@ -20,14 +30,41 @@
   color: $special-dark-grey;
   font-size: 14px;
   line-height: 20px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
+
+  &--city {
+    @media (min-width: $tablet-width) {
+      margin-top: 22px;
+      display: inline-block;
+    }
+
+    @media (min-width: $desktop-width) {
+      text-align: start;
+    }
   }
 }
 
 .address__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 28px;
+  padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding: 59px 41px 41px 42px;
+    margin-bottom: 16px;
+  }
+
   @media (min-width: $desktop-width) {
     box-sizing: border-box;
     display: flex;
@@ -41,5 +78,6 @@
     height: 201px;
     padding-left: 76px;
     padding-right: 89px;
+    padding-top: 45px;
   }
 }

@@ -1,5 +1,25 @@
 .promo {
-  background-color: rgba($basic-green, 85%);
+  position: relative;
+  padding-bottom: 22px;
+  box-sizing: border-box;
+  background: url("../../img/index-background.png");
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+  }
+}
+
+.promo__wrapper {
+  background: rgba($basic-green, 0.85%);
+  height: 276px;
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    background: none;
+    height: auto;
+    padding-top: 0;
+  }
 }
 
 .promo__title {
@@ -7,6 +27,26 @@
   color: $basic-white;
   font-size: 36px;
   line-height: 36px;
+  margin: 0;
+  margin-bottom: 25px;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    background: none;
+    font-size: 60px;
+    line-height: 60px;
+    color: $basic-black;
+    text-align: left;
+    margin-left: 117px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 190px;
+    margin-top: 46px;
+  }
 }
 
 .promo__subtitle {
@@ -15,16 +55,95 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    color: $basic-black;
+    text-align: left;
+    margin-left: 117px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 190px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 270px;
+    left: 20px;
+    bottom: 60px;
+    background-image: url("../../img/index-can-mobile.png");
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/index-can-tablet.png");
+      width: 709px;
+      height: 609px;
+      left: 30px;
+      bottom: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../../img/index-can-desktop.png");
+      background-color: transparent;
+      width: 552px;
+      height: 499px;
+      left: 559px;
+      bottom: 133px;
+    }
+  }
 }
 
 .promo__link {
   @include oswald-normal;
+  position: relative;
+  box-sizing: border-box;
+  display: inline-block;
   color: $basic-white;
   background-color: $basic-green;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   text-decoration: none;
-  width: 280px;
+  text-align: center;
   height: 40px;
+  width: 100%;
+  padding: 7px 44px;
+  margin-top: 138px;
+
+  &:hover,
+  &:focus {
+    background-color: $darken-green;
+  }
+
+  &:active {
+    background-color: $darken-green;
+    color: rgba($basic-white, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 49px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0;
+    width: 244px;
+    height: 54px;
+    margin-left: 83px;
+    margin-bottom: 503px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 52px;
+    margin-left: 80px;
+    margin-bottom: 242px;
+  }
 }

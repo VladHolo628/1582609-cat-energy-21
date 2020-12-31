@@ -5,8 +5,18 @@
   line-height: 18px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .copyright__text {
   margin-right: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 13px;
+  }
 }
