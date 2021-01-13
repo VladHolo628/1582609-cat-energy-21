@@ -63,7 +63,7 @@
     @media (min-width: $tablet-width) {
       width: 40px;
       height: 40px;
-      }
+    }
   }
 }
 // Hover
@@ -85,7 +85,7 @@
   @media (min-width: $tablet-width) {
     width: 18px;
     height: 18px;
-    }
+  }
 }
 // Disabled
 .field-checkbox__input--radio:disabled + .field-checkbox__input--radio-fake::before {
@@ -166,5 +166,11 @@
 .field-checkbox:nth-child(2) {
   @media (max-width: $tablet-width-only) {
     margin-bottom: 29px;
+  }
+}
+
+.field-checkbox:not(:last-child) {
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 30px;
   }
 }

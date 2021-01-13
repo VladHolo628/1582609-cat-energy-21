@@ -62,7 +62,6 @@
 
   @media (min-width: $desktop-width) {
     padding: 25px 35px;
-
   }
 }
 
@@ -79,6 +78,7 @@
 
 .form__block--additional {
   padding-bottom: 41px;
+
   @media (min-width: $desktop-width) {
     padding-bottom: 61px;
   }
@@ -127,6 +127,7 @@
         margin-bottom: 23px;
         padding-bottom: 52px;
       }
+
       &::before {
         content: "";
         position: absolute;
@@ -136,7 +137,7 @@
         top: 65%;
         background-color: $basic-green;
 
-        @media (min-width: $desktop-width){
+        @media (min-width: $desktop-width) {
           width: 70px;
           left: -110px;
           top: 25%;
@@ -183,7 +184,7 @@
         top: 65%;
         background-color: $basic-green;
 
-        @media (min-width: $desktop-width){
+        @media (min-width: $desktop-width) {
           width: 70px;
           left: -110px;
           top: 65%;
@@ -220,6 +221,7 @@
 
     @media (min-width: $tablet-width) {
       margin-bottom: 63px;
+
       &::before {
         content: "";
         position: absolute;
@@ -229,14 +231,15 @@
         top: 65%;
         background-color: $basic-green;
 
-        @media (min-width: $desktop-width){
+        @media (min-width: $desktop-width) {
           width: 70px;
           left: -110px;
           top: 65%;
         }
       }
     }
-    @media (min-width: $desktop-width){
+
+    @media (min-width: $desktop-width) {
       margin-bottom: 63px;
     }
 
