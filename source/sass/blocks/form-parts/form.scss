@@ -1,0 +1,328 @@
+.form__block--br-mobile {
+  display: none;
+
+  @media (max-width: $mobile-width-only) {
+    display: block;
+  }
+}
+
+.form__block--contacts {
+  padding: 32px 0 36px 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 51px;
+    padding-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 48px;
+    padding-bottom: 49px;
+  }
+}
+
+.form__block--cat-data {
+  padding-bottom: 24px;
+
+  @media (max-width: $mobile-width-only) {
+    border-bottom: 1px solid $border-grey-2;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.form__block--radio {
+  padding-top: 22px;
+  padding-bottom: 20px;
+
+  @media (max-width: $mobile-width-only) {
+    border-bottom: 1px solid $border-grey-2;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.form__checkbox-fields--radio {
+  @media (min-width: $tablet-width) {
+    border: 2px solid #d9d9d9;
+    padding: 25px 28px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 25px 35px;
+  }
+}
+
+
+.form__block--comment {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 65px;
+  }
+}
+
+.form__block--additional {
+  padding-bottom: 41px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 61px;
+  }
+}
+
+.form__block-first {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+}
+
+.form__block-second {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 78px;
+  }
+}
+
+.form__block-title {
+  @include oswald-normal;
+  font-size: 24px;
+  line-height: 26px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
+
+  &--contacts {
+    margin-bottom: 31px;
+    position: relative;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 76px;
+
+
+      @media (min-width: $desktop-width) {
+        margin-bottom: 23px;
+        padding-bottom: 52px;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        left: -70px;
+        top: 65%;
+        background-color: $basic-green;
+
+        @media (min-width: $desktop-width) {
+          width: 70px;
+          left: -110px;
+          top: 25%;
+        }
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 99px;
+      height: 2px;
+      right: -20px;
+      top: 14px;
+      background-color: $basic-green;
+
+      @media (min-width: $tablet-width) {
+        width: 145px;
+        top: 65%;
+        right: -70px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 763px;
+        top: 25%;
+        right: -110px;
+      }
+    }
+  }
+
+  &--comment {
+    margin-bottom: 38px;
+    position: relative;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 77px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        left: -70px;
+        top: 65%;
+        background-color: $basic-green;
+
+        @media (min-width: $desktop-width) {
+          width: 70px;
+          left: -110px;
+          top: 65%;
+        }
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 158px;
+      height: 2px;
+      right: -20px;
+      top: 12px;
+      background-color: $basic-green;
+
+      @media (min-width: $tablet-width) {
+        width: 478px;
+        top: 65%;
+        right: -70px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 1092px;
+        top: 65%;
+        right: -110px;
+      }
+    }
+  }
+
+  &--additional {
+    margin-bottom: 40px;
+    position: relative;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 63px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        left: -70px;
+        top: 65%;
+        background-color: $basic-green;
+
+        @media (min-width: $desktop-width) {
+          width: 70px;
+          left: -110px;
+          top: 65%;
+        }
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 63px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 136px;
+      height: 2px;
+      right: -20px;
+      top: 13px;
+      background-color: $basic-green;
+
+      @media (min-width: $tablet-width) {
+        width: 446px;
+        top: 65%;
+        right: -70px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 1058px;
+        top: 65%;
+        right: -110px;
+      }
+    }
+  }
+}
+
+// Form submit
+.form__submit-block {
+  @media (max-width: $mobile-width-only) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+}
+
+.form__submit-button {
+  padding: 7px 44px;
+  margin-bottom: 21px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding: 18px 45px;
+    font-size: 20px;
+    width: 282px;
+    margin-right: 61px;
+    margin-bottom: 73px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 13px 188px;
+    font-size: 20px;
+    width: 568px;
+    margin-bottom: 82px;
+    margin-right: 78px;
+  }
+}
+
+.form__submit-legend {
+  @include arial-normal;
+  font-size: 14px;
+  line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.form__checkbox-fields {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: none;
+    column-gap: 97px;
+    margin-bottom: 8px;
+  }
+}

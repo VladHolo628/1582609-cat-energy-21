@@ -1,0 +1,132 @@
+.field-text {
+  display: flex;
+  align-items: baseline;
+
+  &:not(:last-child) {
+
+    margin-bottom: 13px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 18px;
+    }
+  }
+}
+
+.field-text__label {
+  @include oswald-normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special-dark-grey;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-right: 10px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 29.64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 19px;
+  }
+}
+
+.field-text__input {
+  @include oswald-normal;
+  font-size: 16px;
+  border: 1px solid $border-grey-1;
+  width: 100%;
+  padding: 0 19px;
+  height: 45px;
+  line-height: 45px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    height: 52px;
+    line-height: 50px;
+    font-size: 20px;
+    padding: 0 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 52px;
+    line-height: 50px;
+    font-size: 20px;
+    padding: 0;
+  }
+
+  &::placeholder {
+    @include oswald-normal;
+    font-size: 16px;
+    color: $special-dark-grey;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 13px 17px;
+    }
+  }
+
+  &--email {
+    background-image: url("../../../img/email-icon.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-origin: content-box;
+    background-size: 20px 15px;
+    padding-left: 30px;
+    padding-right: 12px;
+
+    @media (min-width: $desktop-width) {
+      padding-left: 4px;
+      padding-right: 19px;
+    }
+  }
+
+  &--phone {
+    background-image: url("../../../img/phone-icon.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-origin: content-box;
+    background-size: 20px 20px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 23px;
+      padding-right: 12px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 0;
+      padding-right: 15px;
+    }
+  }
+}
+
+
+.field-text__input--comment {
+  min-height: 150px;
+  text-align: center;
+  padding-top: 8px;
+  padding-left: 14px;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    padding-top: 0;
+    padding-left: 19px;
+    min-height: 175px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    padding-top: 0;
+    padding-left: 0;
+    min-height: 175px;
+  }
+}

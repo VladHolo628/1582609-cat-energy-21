@@ -1,11 +1,29 @@
+.page-main--form {
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
 .page-main__title {
   @include oswald-normal;
   font-size: 36px;
   line-height: 36px;
+  margin: 0 0 37px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin: 0 0 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 10px 0 54px;
   }
 }
 
@@ -14,9 +32,23 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  margin: 0 0 40px;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 66px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+  }
+}
+
+.page-main__wrapper {
+  padding-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
   }
 }

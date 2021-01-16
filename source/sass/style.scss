@@ -16,7 +16,6 @@
 @import "blocks/socials.scss";
 @import "blocks/container.scss";
 @import "blocks/copyright.scss";
-@import "blocks/form/form.scss";
 @import "blocks/page-main.scss";
 @import "blocks/button.scss";
 @import "blocks/gift.scss";
@@ -27,9 +26,10 @@
 @import "blocks/additional-product.scss";
 @import "blocks/additional-products.scss";
 @import "blocks/stats.scss";
-@import "blocks/form/field-checkbox.scss";
-@import "blocks/form/field-text.scss";
+@import "blocks/form-parts/field-checkbox.scss";
+@import "blocks/form-parts/form.scss";
 @import "blocks/credits.scss";
 @import "blocks/map.scss";
 @import "blocks/range-slider.scss";
 @import "blocks/page-footer.scss";
+@import "blocks/form-parts/field-text.scss";
