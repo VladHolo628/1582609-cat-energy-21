@@ -10,6 +10,8 @@
   @media (max-width: $mobile-width-only) {
     border-bottom: 1px solid #ebebeb;
     border-collapse: collapse;
+    margin-left: -20px;
+    margin-right: -20px;
   }
 
   @media (min-width: $tablet-width) {
@@ -31,6 +33,10 @@
 }
 
 .product__img-block {
+  @media (max-width: $mobile-width-only) {
+    padding-left: 20px;
+  }
+
   @media (min-width: $tablet-width) {
     grid-row: 1/2;
     margin: 0 auto;
@@ -40,6 +46,10 @@
 }
 
 .product__info-block {
+  @media (max-width: $mobile-width-only) {
+    padding-right: 20px;
+  }
+
   @media (min-width: $tablet-width) {
     grid-row: 2/3;
   }
@@ -59,5 +69,8 @@
 }
 
 .product__button {
+  @media (max-width: $mobile-width-only) {
+    margin: 0 20px;
+  }
   grid-column: 1/3;
 }
